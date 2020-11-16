@@ -7,3 +7,16 @@
 
 /* header */
 @import "../blocks/header/header.css";
+
+/* main */
+@import "../blocks/main/main.css";
+
+/* profile */
+@import "../blocks/profile/profile.css";
+@import "../blocks/profile/__info/profile__info.css";
+@import "../blocks/profile/__image/profile__image.css";
+@import "../blocks/profile/__text/profile__text.css";
+@import "../blocks/profile/__title/profile__title.css";
+@import "../blocks/profile/__subtitle/profile__subtitle.css";
+@import "../blocks/profile/__edit-button/profile__edit-button.css";
+@import "../blocks/profile/__add-button/profile__add-button.css"

@@ -1,0 +1,10 @@
+.profile {
+  margin: 36.25px 0 0 0;
+  width: 100%;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  color: #fff;
+}
