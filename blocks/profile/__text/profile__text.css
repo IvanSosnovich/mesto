@@ -1,0 +1,8 @@
+.profile__text {
+  padding: 0 0 0 30px;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
