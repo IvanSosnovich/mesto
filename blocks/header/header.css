@@ -1,7 +1,6 @@
 .header {
   margin: 0;
   padding: 45px 0 41px 0;
-  max-width: 880px;
   box-sizing: border-box;
   
   grid-area: header;
