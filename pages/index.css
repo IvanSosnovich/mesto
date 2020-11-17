@@ -19,4 +19,12 @@
 @import "../blocks/profile/__title/profile__title.css";
 @import "../blocks/profile/__subtitle/profile__subtitle.css";
 @import "../blocks/profile/__edit-button/profile__edit-button.css";
-@import "../blocks/profile/__add-button/profile__add-button.css"
+@import "../blocks/profile/__add-button/profile__add-button.css";
+
+/* places */
+@import "../blocks/places/places.css";
+@import "../blocks/card/card.css";
+@import "../blocks/card/__image/card__image.css";
+@import "../blocks/card/__info/card__info.css";
+@import "../blocks/card/__title/card__title.css";
+@import "../blocks/card/__like-button/card__like-button.css";
