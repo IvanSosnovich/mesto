@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98c7f548-adcc-4dfe-91f3-c07ed57c6d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +87,10 @@
       <screen x="1680" y="25" width="3440" height="1415" />
     </state>
     <state x="3947" y="407" key="#CSS/1680.25.3440.1415/0.25.1680.1025@1680.25.3440.1415" timestamp="1605733506894" />
+    <state x="4065" y="536" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605947092481">
+      <screen x="1680" y="25" width="3440" height="1415" />
+    </state>
+    <state x="4065" y="536" key="#com.intellij.fileTypes.FileTypeChooser/1680.25.3440.1415/0.25.1680.1025@1680.25.3440.1415" timestamp="1605947092481" />
     <state x="3628" y="353" key="SettingsEditor" timestamp="1605618825602">
       <screen x="1680" y="25" width="3440" height="1415" />
     </state>
