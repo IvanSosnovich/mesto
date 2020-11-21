@@ -5,4 +5,21 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px 17px;
   align-items: center;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1024px){
+  .places {
+    margin: 36px 0 0 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media all and (max-width: 520px){
+  .places {
+    margin: 36px 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }

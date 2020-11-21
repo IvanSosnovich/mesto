@@ -6,10 +6,23 @@
   width: 24px;
   height: 24px;
 
-  background: none;
+  background-color: rgba(0, 0, 0, 0);
   background-image: url(../../../images/edit-button__image.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border: 1px solid #FFFFFF;
-
+  transition: opacity 0.4s linear;
 }
+
+.profile__edit-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px){
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+  }
+}
+

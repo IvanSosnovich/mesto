@@ -3,7 +3,7 @@
   height: 50px;
   align-self: center;
   justify-self: right;
-  background: none;
+  background-color: rgba(0, 0, 0, 1);
   background-image: url(../../../images/add-button__image.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -11,4 +11,23 @@
   
   border: 2px solid #FFFFFF;
   border-radius: 2px;
+  transition: opacity 0.4s linear;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px){
+  .profile__add-button {
+    width: 150px;
+  }
+}
+
+@media all and (max-width: 620px){
+  .profile__add-button {
+    margin: 36px 0 0 0;
+    width: 100%;
+  }
 }

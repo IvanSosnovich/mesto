@@ -3,6 +3,7 @@
   height: 18px;
 
   border: none;
+  background-color: rgba(0, 0, 0, 0);
   background-image: url("../../../images/card__like-button.svg");
   background-position: center center;
 }

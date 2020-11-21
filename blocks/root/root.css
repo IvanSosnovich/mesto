@@ -1,16 +1,7 @@
 .root {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  grid-template-columns: repeat(1, 14.5%) repeat(3, 1fr) repeat(1, 14.5%);
-  
-
-  grid-template-areas: 
-  '. header header header .'
-  '. main main main .'
-  '. footer footer footer .'
-  ;
-
-  
-  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 

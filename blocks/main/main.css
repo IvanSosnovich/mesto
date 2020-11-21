@@ -1,3 +1,21 @@
 .main {
-  grid-area: main;
+  margin: 36px 177px 0 177px;
+}
+
+@media all and (max-width: 1024px){
+  .main {
+    margin: 38.25px 54px 0 54px;
+  }
+}
+
+@media all and (max-width: 720px){
+  .main {
+    margin: 38.25px 28px 0 28px;
+  }
+}
+
+@media all and (max-width: 454px){
+  .main {
+    margin: 38.25px 19px 0 19px;
+  }
 }

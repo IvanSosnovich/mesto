@@ -6,3 +6,9 @@
   justify-content: center;
   flex-direction: column;
 }
+
+@media all and (max-width: 620px) {
+  .profile__text {
+    padding: 0;
+  }
+}
