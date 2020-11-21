@@ -7,6 +7,7 @@
 
 /* header */
 @import "../blocks/header/header.css";
+@import "../blocks/header/__logo/header__logo.css";
 
 /* main */
 @import "../blocks/main/main.css";
@@ -32,3 +33,11 @@
 /*footer*/
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__title/footer__title.css";
+
+/*popup*/
+@import "../blocks/popup/popup.css";
+@import "../blocks/popup/__container/popup__container.css";
+@import "../blocks/popup/__title/popup__title.css";
+@import "../blocks/popup/__close-button/popup__close-button.css";
+@import "../blocks/popup/__input/popup__input.css";
+@import "../blocks/popup/__save-button/popup__save-button.css";
