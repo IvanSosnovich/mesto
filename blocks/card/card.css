@@ -1,7 +1,12 @@
 .card {
-  width: 290px;
+  max-width: 290px;
   height: 361px;
-
   background-color: #fff;
   border-radius: 10px;
+}
+
+@media all and (max-width: 520px){
+  .card {
+    width: 100%;
+  }
 }

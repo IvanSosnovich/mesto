@@ -3,3 +3,10 @@
   align-content: center;
   justify-content: space-between;
 }
+
+@media all and (max-width: 454px) {
+  .profile__info {
+    align-items: center;
+    flex-direction: column;
+  }
+}
