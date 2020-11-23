@@ -7,41 +7,40 @@ const profileSubTitle = profileContainer.querySelector('.profile__subtitle');
 
 // Находим кнопку редактирования профиля
 const editProfileInfoButton = profileContainer.querySelector('.profile__edit-button');
-editProfileInfoButton.addEventListener('click', showEditForm);
 
 // Находим форму редактирования профиля
 const formEditProfile = mainContainer.querySelector('.popup');
 
 // Находим кнопку закрытия формы
 const closeEditFormButton = formEditProfile.querySelector('.popup__close-button');
-closeEditFormButton.addEventListener('click', closeEditForm); // Добовляем слушателя кнопки закрытия формы
 
 //Находим кнопку сохранения введенных данных
 const saveEditFormButton = formEditProfile.querySelector('.popup__save-button');
-saveEditFormButton.addEventListener('click', saveEditFormValue);
 
 // Находим текстовые поля формы
-const formValue = formEditProfile.querySelectorAll('input');
-
-
+const newTitleProfile = formEditProfile.querySelector('.popup__input_value-title');
+const newSubtitleProfile = formEditProfile.querySelector('.popup__input_value-subtitle');
 
 // Функция открытия формы для редактирования профиля
 function showEditForm() {
-  formEditProfile.classList.remove('popup_no-active');
-  formEditProfile.classList.add('popup');
-  formValue[0].value = profileTitle.textContent;
-  formValue[1].value = profileSubTitle.textContent;
+  formEditProfile.classList.add('popup_active');
+  newTitleProfile.value = profileTitle.textContent;
+  newSubtitleProfile.value = profileSubTitle.textContent;
 }
 
 // Функция закрытия формы редактирования профиля
 function closeEditForm() {
-  formEditProfile.classList.add('popup_no-active');
-  formEditProfile.classList.remove('popup');
+  formEditProfile.classList.remove('popup_active');
 }
 
 function saveEditFormValue(event) {
   event.preventDefault();
-  profileTitle.textContent = formValue[0].value;
-  profileSubTitle.textContent = formValue[1].value;
+  profileTitle.textContent = newTitleProfile.value;
+  profileSubTitle.textContent = newSubtitleProfile.value;
   closeEditForm();
 }
+
+// Слушатели
+editProfileInfoButton.addEventListener('click', showEditForm); // кнопка редактирования профиля
+closeEditFormButton.addEventListener('click', closeEditForm); // кнопка закрытия редактирования формы
+saveEditFormButton.addEventListener('click', saveEditFormValue); // кнопка сохранения новых данных
