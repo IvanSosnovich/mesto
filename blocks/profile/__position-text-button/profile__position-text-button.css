@@ -1,0 +1,5 @@
+.profile__position-text-button {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}

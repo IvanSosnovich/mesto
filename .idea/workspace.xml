@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c7f548-adcc-4dfe-91f3-c07ed57c6d9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_no-active/popup_no-active.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__position-text-button/profile__position-text-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__title/card__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/card/__title/card__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blocks/profile" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
@@ -87,10 +96,14 @@
       <screen x="1680" y="25" width="3440" height="1415" />
     </state>
     <state x="3947" y="407" key="#CSS/1680.25.3440.1415/0.25.1680.1025@1680.25.3440.1415" timestamp="1605733506894" />
-    <state x="4065" y="536" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605947092481">
+    <state x="3728" y="349" key="#JavaScript" timestamp="1606122135918">
       <screen x="1680" y="25" width="3440" height="1415" />
     </state>
-    <state x="4065" y="536" key="#com.intellij.fileTypes.FileTypeChooser/1680.25.3440.1415/0.25.1680.1025@1680.25.3440.1415" timestamp="1605947092481" />
+    <state x="3728" y="349" key="#JavaScript/1680.25.3440.1415/0.25.1680.1025@1680.25.3440.1415" timestamp="1606122135918" />
+    <state x="4065" y="536" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606121550834">
+      <screen x="1680" y="25" width="3440" height="1415" />
+    </state>
+    <state x="4065" y="536" key="#com.intellij.fileTypes.FileTypeChooser/1680.25.3440.1415/0.25.1680.1025@1680.25.3440.1415" timestamp="1606121550834" />
     <state x="3628" y="353" key="SettingsEditor" timestamp="1605618825602">
       <screen x="1680" y="25" width="3440" height="1415" />
     </state>
