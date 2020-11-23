@@ -17,21 +17,21 @@
           <img src="./images/profile__image.jpg" alt="Аватарка главного путешественника" class="profile__image">
             <div class="profile__text">
               <div class="profile__position-text-button">
-                <h2 class="profile__title">Жак-Ив Кусто</h2>
-                <button class="profile__edit-button"></button>
+                <h1 class="profile__title">Жак-Ив Кусто</h1>
+                <button class="profile__edit-button" type="submit" aria-label="Show edit form"></button>
               </div>
               <p class="profile__subtitle">Исследователь океана</p>
             </div>
           </div>
-          <button class="profile__add-button"></button>
+          <button class="profile__add-button" type="submit" aria-label="add places"></button>
       </section>
-      <section class="places">
+      <div class="places">
 
         <article class="card">
           <img src="./images/card__finland.jpeg" alt="Финлядния" class="card__image">
           <div class="card__info">
             <h2 class="card__title">Финлядния</h2>
-            <button class="card__like-button"></button>
+            <button class="card__like-button" type="button" aria-label="like button"></button>
           </div>
         </article>
 
@@ -39,7 +39,7 @@
           <img src="./images/card__kareliy.jpeg" alt="Карелия" class="card__image">
           <div class="card__info">
             <h2 class="card__title">Карелия</h2>
-            <button class="card__like-button"></button>
+            <button class="card__like-button" type="button" aria-label="like button"></button>
           </div>
         </article>
 
@@ -47,7 +47,7 @@
           <img src="./images/card__kitay.jpeg" alt="Китвй" class="card__image">
           <div class="card__info">
             <h2 class="card__title">Китай</h2>
-            <button class="card__like-button"></button>
+            <button class="card__like-button" type="button" aria-label="like button"></button>
           </div>
         </article>
 
@@ -55,7 +55,7 @@
           <img src="./images/card__sankt-peterburg.jpeg" alt="Санкт-Петербург" class="card__image">
           <div class="card__info">
             <h2 class="card__title">Санкт-Петербург</h2>
-            <button class="card__like-button"></button>
+            <button class="card__like-button" type="button" aria-label="like button"></button>
           </div>
         </article>
 
@@ -63,7 +63,7 @@
           <img src="./images/card__vladivostok.jpeg" alt="Владивосток" class="card__image">
           <div class="card__info">
             <h2 class="card__title">Владивосток</h2>
-            <button class="card__like-button"></button>
+            <button class="card__like-button" type="button" aria-label="like button"></button>
           </div>
         </article>
 
@@ -71,25 +71,25 @@
           <img src="./images/card__japan.jpeg" alt="Япония" class="card__image">
           <div class="card__info">
             <h2 class="card__title">Япония</h2>
-            <button class="card__like-button"></button>
+            <button class="card__like-button" type="button" aria-label="like button"></button>
           </div>
         </article>
 
-      </section>
-      <form action="" class="popup popup_no-active">
+      </div>
+      <form name="edit profile form" action="#" method="post" class="popup">
         <div class="popup__container">
           <h2 class="popup__title">Редактировать профиль</h2>
-          <button type="reset" class="popup__close-button"></button>
-          <input type="text" class="popup__input">
-          <input type="text" class="popup__input">
-          <button type="submit" class="popup__save-button">Сохранить</button>
+          <button type="reset" class="popup__close-button" aria-label="Close edit form"></button>
+          <input type="text" class="popup__input popup__input_value-title" name="title">
+          <input type="text" class="popup__input popup__input_value-subtitle" name="subTitle">
+          <button type="submit" class="popup__save-button" aria-label="Save new value button">Сохранить</button>
         </div>
       </form>
     </main>
     <footer class="footer">
-     <h1 class="footer__title">&copy; 2020 Mesto Russia</h1>
+     <p class="footer__title">&copy; 2020 Mesto Russia</p>
     </footer>
   </div>
-  <script src="./index.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
