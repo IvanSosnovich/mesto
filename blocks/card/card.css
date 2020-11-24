@@ -4,7 +4,7 @@
   border-radius: 10px;
 }
 
-@media all and (max-width: 520px){
+@media all and (max-width: 659px){
   .card {
     width: 100%;
   }

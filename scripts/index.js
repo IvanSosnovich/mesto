@@ -44,3 +44,4 @@ function saveEditFormValue(event) {
 editProfileInfoButton.addEventListener('click', showEditForm); // кнопка редактирования профиля
 closeEditFormButton.addEventListener('click', closeEditForm); // кнопка закрытия редактирования формы
 saveEditFormButton.addEventListener('click', saveEditFormValue); // кнопка сохранения новых данных
+formEditProfile.addEventListener('submit',saveEditFormValue);
