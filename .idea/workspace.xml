@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98c7f548-adcc-4dfe-91f3-c07ed57c6d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/card/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/card/card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/places/places.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/places/places.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/_active/popup_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/_active/popup_active.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card/__image/card__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/card/__image/card__image.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
@@ -74,7 +71,8 @@
       <workItem from="1605618201463" duration="199000" />
       <workItem from="1605618406856" duration="1735000" />
       <workItem from="1605679823301" duration="12684000" />
-      <workItem from="1606215724805" duration="1121000" />
+      <workItem from="1606215724805" duration="2903000" />
+      <workItem from="1606238631653" duration="1386000" />
     </task>
     <servers />
   </component>
