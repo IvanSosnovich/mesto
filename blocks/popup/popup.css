@@ -1,5 +1,15 @@
+@keyframes close {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+}
+
 .popup {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -9,5 +19,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  animation: close 0.3s linear;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
-
