@@ -35,17 +35,28 @@ const profileSubTitle = profileContainer.querySelector('.profile__subtitle');
 // Находим кнопку редактирования профиля
 const editProfileInfoButton = profileContainer.querySelector('.profile__edit-button');
 
-// Находим форму редактирования профиля
-const formEditProfile = mainContainer.querySelector('.popup');
+// Находим кнопку добовления карточки
+const addCardButton = profileContainer.querySelector('.profile__add-button');
 
-// Находим кнопку закрытия формы
+// Находим форму редактирования профиля
+const formEditProfile = mainContainer.querySelector('.popup_edit-profile');
+
+// Находим форму добовления карточки
+const formAddCard = mainContainer.querySelector('.popup_add-new-card');
+
+// Находим кнопку закрытия формы редоктирования профиля
 const closeEditFormButton = formEditProfile.querySelector('.popup__close-button');
+
+// Находим кнопку закрытия формы добовления карточки
+const cloaseAddCardFormButton = formAddCard.querySelector('.popup__close-button');
 
 // Находим текстовые поля формы
 const newTitleProfile = formEditProfile.querySelector('.popup__input_value-title');
 const newSubtitleProfile = formEditProfile.querySelector('.popup__input_value-subtitle');
 
-
+// Находим значения импутов поля добовления карточки
+const nameCard = formAddCard.querySelector('.popup__input_name');
+const urlImage = formAddCard.querySelector('.popup__input_url-image');
 
 // Находим блок где отображаються все карточки
 const placesBlock = document.querySelector('.places');
@@ -63,6 +74,7 @@ function addCardElement({ name, link }) {
   // сразу получаем содержимое и кланируем его
   const cardPlaces = document.querySelector('#card').content.cloneNode(true);
   cardPlaces.querySelector('.card__image').src = link;
+  cardPlaces.querySelector('.card__image').alt = name;
   cardPlaces.querySelector('.card__title').textContent = name;
   placesBlock.append(cardPlaces);
 }
@@ -74,11 +86,22 @@ function showEditForm() {
   newSubtitleProfile.value = profileSubTitle.textContent;
 }
 
+// Функция открытия формы добовления карточки
+function showAddCardForm() {
+  formAddCard.classList.add('popup_active');
+}
+
 // Функция закрытия формы редактирования профиля
 function closeEditForm() {
   formEditProfile.classList.remove('popup_active');
 }
 
+// Функция закрытия формы доовления карточки
+function closeAddCardForm() {
+  formAddCard.classList.remove('popup_active');
+}
+
+// Функция сохранения формы профиля
 function saveEditFormValue(event) {
   event.preventDefault();
   profileTitle.textContent = newTitleProfile.value;
@@ -86,9 +109,27 @@ function saveEditFormValue(event) {
   closeEditForm();
 }
 
+// Функция сохранения новой карточки
+function saveNewCard(event) {
+  event.preventDefault();
+  const newCard = {
+    name: nameCard.value,
+    link: urlImage.value
+  }
+  addCardElement(newCard);
+  nameCard.value = '';
+  urlImage.value = '';
+  closeAddCardForm();
+}
+
+
 rendering();
 
 // Слушатели
 editProfileInfoButton.addEventListener('click', showEditForm); // кнопка редактирования профиля
 closeEditFormButton.addEventListener('click', closeEditForm); // кнопка закрытия редактирования формы
-formEditProfile.addEventListener('submit',saveEditFormValue);
+formEditProfile.addEventListener('submit', saveEditFormValue);
+
+addCardButton.addEventListener('click', showAddCardForm);
+cloaseAddCardFormButton.addEventListener('click', closeAddCardForm);
+formAddCard.addEventListener('submit', saveNewCard);
