@@ -1,3 +1,30 @@
+const initialCards = [
+    {
+        name: 'Архыз',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    },
+    {
+        name: 'Челябинская область',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+    },
+    {
+        name: 'Иваново',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+    },
+    {
+        name: 'Камчатка',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+    },
+    {
+        name: 'Холмогорский район',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    },
+    {
+        name: 'Байкал',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    }
+];
+
 const mainContainer = document.querySelector('main'); // Находим главный контейнер
 const profileContainer = mainContainer.querySelector('.profile'); // Находим секцию профиля
 
@@ -18,6 +45,28 @@ const closeEditFormButton = formEditProfile.querySelector('.popup__close-button'
 const newTitleProfile = formEditProfile.querySelector('.popup__input_value-title');
 const newSubtitleProfile = formEditProfile.querySelector('.popup__input_value-subtitle');
 
+
+
+// Находим блок где отображаються все карточки
+const placesBlock = document.querySelector('.places');
+
+// Функция доавления карточек при загрузки страници
+function rendering() {
+  initialCards.forEach(item => {
+    addCardElement(item);
+  })
+}
+
+// Функция добовления 1 элемента
+function addCardElement({ name, link }) {
+  // Находим template card в main блок
+  // сразу получаем содержимое и кланируем его
+  const cardPlaces = document.querySelector('#card').content.cloneNode(true);
+  cardPlaces.querySelector('.card__image').src = link;
+  cardPlaces.querySelector('.card__title').textContent = name;
+  placesBlock.append(cardPlaces);
+}
+
 // Функция открытия формы для редактирования профиля
 function showEditForm() {
   formEditProfile.classList.add('popup_active');
@@ -36,6 +85,8 @@ function saveEditFormValue(event) {
   profileSubTitle.textContent = newSubtitleProfile.value;
   closeEditForm();
 }
+
+rendering();
 
 // Слушатели
 editProfileInfoButton.addEventListener('click', showEditForm); // кнопка редактирования профиля
